@@ -1,0 +1,39 @@
+subnets ={
+    snet1={
+        subnet_name="fontend-prod"
+        address_prefixes=["10.0.0.0/24"]
+    }
+    snet2={
+        subnet_name="backend-prod"
+        address_prefixes=["10.0.1.0/24"]
+    }
+}
+public_ip={
+    public-ip1={
+        public_ip_name="frontend-pip"
+        allocation_method="Static"
+    }
+    public-ip2={
+        public_ip_name="backend-pip"
+        allocation_method="Static"
+    }
+}
+
+virtual_machine= {
+    vm1={
+        vm_name="frontend-vm"
+        admin_username="devopsinsider"
+        admin_password="Kiran@123456"
+        nic_name="frontend-nic"
+        public_ip_name="frontend-pip"
+        subnet_name="fontend-prod"
+        }
+    vm2={
+        vm_name="backend-vm"
+        admin_username="devopsinsider"
+        admin_password="Kiran@123456"
+        nic_name="backend-nic"
+        public_ip_name="backend-pip"
+        subnet_name="backend-prod"
+        }
+}
