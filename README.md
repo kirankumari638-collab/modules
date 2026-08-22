@@ -142,4 +142,4 @@ virtual_machine = {
 - 💾 **Remote State Storage**: Store Terraform state files in an Azure Blob Storage container with state locking enabled for team collaboration.
 - 🔑 **SSH Key Security**: Protect SSH private keys used for virtual machine access.
 - 🎯 **Least Privilege**: Grant minimal required Azure RBAC roles for terraform execution service principals.
-
+
